@@ -1,9 +1,9 @@
 using UnityEditor;
 using UnityEngine;
 
-/****************************************************************************************************************************
+/*
  * 
- *  --{   Project Setup Helper  }--
+ *  Project Setup Helper
  *							  
  *	Project Setup Helper Editor Window
  *      Does everything that the tool is required to. both the window and the making of the folders.
@@ -18,7 +18,7 @@ using UnityEngine;
  *  Version: 1.0.0
  *	Last Updated: 04/02/2021 (d/m/y)						
  * 
-****************************************************************************************************************************/
+*/
 
 namespace CarterGames.Tools
 {
@@ -54,6 +54,7 @@ namespace CarterGames.Tools
             AssetDatabase.CreateFolder(path, "Scripts");
             AssetDatabase.CreateFolder(path, "Editor");
             AssetDatabase.CreateFolder(path, "Shaders");
+            AssetDatabase.CreateFolder(path, "Scriptable Objects");
             AssetDatabase.CreateAsset(new TextAsset(), path + "/Animations/Controllers/Placeholder.txt");
             AssetDatabase.CreateAsset(new TextAsset(), path + "/Artwork/Placeholder.txt");
             AssetDatabase.CreateAsset(new TextAsset(), path + "/Audio/Placeholder.txt");
@@ -68,6 +69,7 @@ namespace CarterGames.Tools
             AssetDatabase.CreateAsset(new TextAsset(), path + "/Scripts/Placeholder.txt");
             AssetDatabase.CreateAsset(new TextAsset(), path + "/Editor/Placeholder.txt");
             AssetDatabase.CreateAsset(new TextAsset(), path + "/Shaders/Placeholder.txt");
+            AssetDatabase.CreateAsset(new TextAsset(), path + "/Scriptable Objects/Placeholder.txt");
             AssetDatabase.SaveAssets();
             AssetDatabase.DeleteAsset(path + "/ProjectSetupHelper.cs");
         }
