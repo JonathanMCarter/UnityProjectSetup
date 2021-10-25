@@ -21,3 +21,5 @@ It currently creates the following paths and populates them with a placeholder a
 - Scriptable Objects
 - Scripts
 - Shaders
+
+To activate the script just navigate to <code>Tools/Setup Project</code> in the navigation bar menu and the script will do the rest.
